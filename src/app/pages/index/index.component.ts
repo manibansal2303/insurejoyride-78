@@ -16,9 +16,6 @@ import { Component, OnInit } from '@angular/core';
             <a routerLink="/auth" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">
               Get Started
             </a>
-            <a routerLink="/api-test" class="bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 rounded">
-              API Test
-            </a>
           </div>
         </div>
       </main>

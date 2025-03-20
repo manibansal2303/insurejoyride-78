@@ -9,14 +9,12 @@ import { AppComponent } from './app.component';
 import { IndexComponent } from './pages/index/index.component';
 import { AuthComponent } from './pages/auth/auth.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
-import { ApiTestComponent } from './pages/api-test/api-test.component';
 import { AuthInterceptor } from './interceptors/auth.interceptor';
 import { AuthGuard } from './guards/auth.guard';
 
 const routes: Routes = [
   { path: '', component: IndexComponent },
   { path: 'auth', component: AuthComponent },
-  { path: 'api-test', component: ApiTestComponent },
   { path: '**', component: NotFoundComponent }
 ];
 
@@ -25,8 +23,7 @@ const routes: Routes = [
     AppComponent,
     IndexComponent,
     AuthComponent,
-    NotFoundComponent,
-    ApiTestComponent
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
