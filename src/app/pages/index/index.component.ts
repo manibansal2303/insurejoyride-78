@@ -16,6 +16,9 @@ import { Component, OnInit } from '@angular/core';
             <a routerLink="/auth" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">
               Get Started
             </a>
+            <a routerLink="/github" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded">
+              Setup GitHub
+            </a>
           </div>
         </div>
       </main>

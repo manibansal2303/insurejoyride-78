@@ -9,12 +9,14 @@ import { AppComponent } from './app.component';
 import { IndexComponent } from './pages/index/index.component';
 import { AuthComponent } from './pages/auth/auth.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { GitHubComponent } from './pages/github/github.component';
 import { AuthInterceptor } from './interceptors/auth.interceptor';
 import { AuthGuard } from './guards/auth.guard';
 
 const routes: Routes = [
   { path: '', component: IndexComponent },
   { path: 'auth', component: AuthComponent },
+  { path: 'github', component: GitHubComponent },
   { path: '**', component: NotFoundComponent }
 ];
 
@@ -23,7 +25,8 @@ const routes: Routes = [
     AppComponent,
     IndexComponent,
     AuthComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    GitHubComponent
   ],
   imports: [
     BrowserModule,
