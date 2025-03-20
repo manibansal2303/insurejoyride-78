@@ -1,0 +1,21 @@
+
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../dist/out-tsc",
+    "baseUrl": "./",
+    "module": "esnext",
+    "target": "es2015",
+    "lib": ["es2018", "dom"],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "types": ["node"]
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  },
+  "include": ["**/*.ts"]
+}
